@@ -266,3 +266,14 @@ input[name="r"] {
 	color: #2d4263;
 	border-color: var(--blue);
 }
+
+.pimg{
+	background-image: url('../assets/pimg1.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	height: 40%;
+	width: 100%;
+	object-fit: cover;
+	opacity: 0.7;
+}

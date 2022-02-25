@@ -34,16 +34,18 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <header>
       <nav class="navbar">
-        <a href="">Home</a>
-        <a href="">Our Team</a>
+        <a href="#home" class="active">Home</a>
+        <a href="#our_team">Our Team</a>
         <a href="">Instructor</a>
         <a href="">Contact</a>
       </nav>
     </header>
-    <section class="home">
+
+    <section class="home" id="home">
       <video
         class="video-slide"
         src="./assets/Lighthouse - 52429.mp4"
@@ -54,17 +56,8 @@
     </section>
 
     <!-- Mahidar code -->
-    <section>
+    <section id="our_team">
       <div class="pd1 bg-line-color">
-        <div>
-          <div class="d-flex flex-row justify-content-start bg-nav2">
-            <button class="bg-b-color">home</button>
-            <button class="bg-b-color">about</button>
-            <button class="bg-b-color">instructor</button>
-          </div>
-          <hr class="line-color" />
-        </div>
-
         <div
           id="carouselExampleIndicators"
           class="carousel slide"
@@ -122,5 +115,6 @@
         </div>
       </div>
     </section>
+
   </body>
 </html>

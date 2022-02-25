@@ -18,11 +18,11 @@ header {
   left: 0;
   right: 0;
   z-index: 1;
-  border-bottom: solid .1rem var(--cream);
+  border-bottom: solid 0.1rem var(--cream);
 }
 
-header nav{
-	float: right;
+header nav {
+  float: right;
 }
 header .navbar a {
   font-size: 2rem;
@@ -38,9 +38,10 @@ header .navbar a:hover {
   background: var(--cream);
   color: var(--blue);
 }
+
 video {
   /*cover the whole screen*/
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -62,51 +63,54 @@ nav ul li {
 }
 
 /* Mahidar code */
-body{
-	font-family: 'Montserrat', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
-.bgs-1{
-	background-color: #2d4263;
-	height: 60vh;
-	color: #ecdbba;
+.bgs-1 {
+  background-color: #2d4263;
+  height: 60vh;
+  color: #ecdbba;
 }
 
-.pd1{
-	margin-left:  6vw;
-	margin-right: 6vw;
+.pd1 {
+  margin-left: 6vw;
+  margin-right: 6vw;
 }
 
-.bg-nav2{
-	background-color: #2d4263;
-	color: #ecdbba;
-	height: 10vh;
+.bg-nav2 {
+  background-color: #2d4263;
+  color: #ecdbba;
+  height: 10vh;
 }
 
-.line-color{
-background-color: #ecdbba;
-height: 5px;
+.line-color {
+  background-color: #ecdbba;
+  height: 5px;
 }
 
-.bg-line-color{
-	background-color: #2d4263;
+.bg-line-color {
+  background-color: #2d4263;
 }
 
-.bg-b-color{
-	background-color: #2d4263;
-	border-width: 0;
-	margin-top: 3vh;
-	margin-left: 3vh;
-	margin-right: 3vh;
-	color: #ecdbba;
-	font-size: 30px;
-	border-radius: 20px;
-	height: 5vh;
-	padding: 5px;
+.bg-b-color {
+  background-color: #2d4263;
+  border-width: 0;
+  margin-top: 3vh;
+  margin-left: 3vh;
+  margin-right: 3vh;
+  color: #ecdbba;
+  font-size: 30px;
+  border-radius: 20px;
+  height: 5vh;
+  padding: 5px;
 }
 
 .bg-b-color:hover {
-	background-color: #ecdbba;
-	color: #2d4263;
-	
-  }
+  background-color: #ecdbba;
+  color: #2d4263;
+}
+
+p{
+	color: var(--blue);
+}

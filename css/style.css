@@ -1,4 +1,19 @@
 @import url(./reset.css);
-body{
-	font-family: 'Montserrat', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 200px;
+  transition: 0.5s ease;
+}
+h1 {
+  z-index: 1;
 }

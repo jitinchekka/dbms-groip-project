@@ -44,16 +44,14 @@ video {
   position: relative;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   object-fit: cover;
   z-index: 0;
   opacity: 0.8;
 }
 /* navigation bar ul*/
-h1 {
-  float: left;
-}
+
 nav ul {
   float: right;
   top: 0;
@@ -82,9 +80,22 @@ nav ul li {
   font-weight: 500;
   text-transform: uppercase;
 }
+.scroll{
+	/* background-color: var(--cream); */
+	z-index: 1;
+	top: 85%;
+	left: 50%;
+	position: absolute;
+	width: 6rem;
+	height: 5rem;
+	/* object-fit: scale-down; */
+}
+.scroll:hover{
+	cursor: pointer;
+}
 /* Highlight class */
 
-/* Mahidar code */
+							/* Mahidar code */
 .parent {
   position: relative;
 }
@@ -216,26 +227,42 @@ input[name="r"] {
   width: 100%;
 }
 
-.grid-layout {
+/* .grid-layout {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 60vw 40vw;
   grid-template-rows: repeat(3, 1fr);
-  align-items: center;
+  grid-template-areas: "photo info-1" "photo info-2" "photo info-3";
   justify-items: center;
-  justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 .column_photo_left {
-  grid-column: 1/2;
+  grid-area: photo;
+  object-fit: fill;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
-.column_info {
-  grid-column: 2/3;
-  grid-row: 1/4;
+.row-1 {
+  grid-area: info-1;
 }
+.row-2 {
+  grid-area: info-2;
+}
+.row-3 {
+  grid-area: info-3;
+} */
 .buttonKnowMore {
   padding: 20px;
   border-width: 5px;
   border-color: #ecdbba;
   background-color: #2d4263;
   color: #ecdbba;
+  transition-duration: 0.4s;
+}
+
+.buttonKnowMore:hover{
+	cursor: pointer;
+	background-color: #ecdbba;
+	color: #2d4263;
+	border-color: var(--blue);
 }

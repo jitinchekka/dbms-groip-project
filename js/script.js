@@ -3,7 +3,8 @@ let navbar = document.querySelector(".navbar");
 let section = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header .navbar a");
 
-window.onscroll = () => {
+window.addEventListener("scroll", () => {
+  console.log("100");
   navbar.classList.remove("active");
   console.log("scrolled\n");
   section.forEach((sec) => {
@@ -22,4 +23,13 @@ window.onscroll = () => {
       });
     }
   });
-};
+});
+
+var counter = 1;
+setInterval(function() {
+    document.getElementById("r" + counter).checked = true;
+    counter++;
+    if (counter > 3) {
+        counter = 1;
+    }
+}, 5000);

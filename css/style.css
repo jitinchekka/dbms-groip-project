@@ -5,6 +5,7 @@ body {
 :root {
   --blue: #2d4263;
   --cream: #ecdbba;
+  --navColor: #ccac8f;
 }
 html {
   scroll-behavior: smooth;
@@ -29,13 +30,13 @@ header .navbar a {
   font-weight: 500;
   border-radius: 2rem;
   padding: 0.5rem 1rem;
-  color: var(--cream);
+  color: var(--navColor);
   text-decoration: none;
 }
 
 header .navbar a.active,
 header .navbar a:hover {
-  background: var(--cream);
+  background: var(--navColor);
   color: var(--blue);
 }
 
@@ -227,31 +228,6 @@ input[name="r"] {
   width: 100%;
 }
 
-/* .grid-layout {
-  display: grid;
-  grid-template-columns: 60vw 40vw;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "photo info-1" "photo info-2" "photo info-3";
-  justify-items: center;
-  align-items: center;
-}
-.column_photo_left {
-  grid-area: photo;
-  object-fit: fill;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-}
-.row-1 {
-  grid-area: info-1;
-}
-.row-2 {
-  grid-area: info-2;
-}
-.row-3 {
-  grid-area: info-3;
-} */
-
 /* Clear floats after image containers */
 .row::after {
   content: "";
@@ -286,23 +262,42 @@ input[name="r"] {
   background-attachment: fixed;
   opacity: 0.7;
 }
-#instructor{
+#instructor {
   position: relative;
   background-color: var(--cream);
   padding-top: 4%;
 }
-.name{
+.name {
   /* position: absolute; */
   color: var(--blue);
   padding-top: 4%;
   text-align: center;
-
 }
-#instructor h2{
+#instructor h2 {
   text-align: center;
   color: var(--blue);
 }
-#instructor img{
+#instructor img {
   width: 15rem;
   height: 15rem;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  padding: 1rem;
+  background-color: var(--blue);
+  color: var(--cream);
+  border-top: solid 3px var(--cream);
+}
+
+footer img {
+  object-fit: cover;
+  height: 4rem;
+}
+footer a{
+  text-decoration: none;
+  color: inherit;
 }

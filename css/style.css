@@ -266,14 +266,15 @@ input[name="r"] {
 	color: #2d4263;
 	border-color: var(--blue);
 }
-
+/* Parallax effect */
 .pimg{
-	background-image: url('../assets/pimg1.jpg');
-	background-size: cover;
-	background-position: center center;
-	background-attachment: fixed;
-	height: 40%;
-	width: 100%;
-	object-fit: cover;
-	opacity: 0.7;
+  width: 100%;
+  height: 40vh;
+  background-image: url(../assets/pimg1.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  opacity: 0.7;
 }

@@ -18,7 +18,7 @@ header {
   left: 0;
   right: 0;
   z-index: 1;
-  border-bottom: solid 0.1rem var(--cream);
+  /* border-bottom: solid 0.1rem var(--cream); */
 }
 
 header nav {
@@ -80,22 +80,22 @@ nav ul li {
   font-weight: 500;
   text-transform: uppercase;
 }
-.scroll{
-	/* background-color: var(--cream); */
-	z-index: 1;
-	top: 85%;
-	left: 50%;
-	position: absolute;
-	width: 6rem;
-	height: 5rem;
-	/* object-fit: scale-down; */
+.scroll {
+  /* background-color: var(--cream); */
+  z-index: 1;
+  top: 85%;
+  left: 50%;
+  position: absolute;
+  width: 6rem;
+  height: 5rem;
+  /* object-fit: scale-down; */
 }
-.scroll:hover{
-	cursor: pointer;
+.scroll:hover {
+  cursor: pointer;
 }
 /* Highlight class */
 
-							/* Mahidar code */
+/* Mahidar code */
 .parent {
   position: relative;
 }
@@ -251,23 +251,31 @@ input[name="r"] {
 .row-3 {
   grid-area: info-3;
 } */
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .buttonKnowMore {
   padding: 20px;
   border-width: 5px;
   border-color: #ecdbba;
   background-color: #2d4263;
   color: #ecdbba;
-  transition-duration: 0.4s;
+  /* transition-duration: 0.4s; */
 }
 
-.buttonKnowMore:hover{
-	cursor: pointer;
-	background-color: #ecdbba;
-	color: #2d4263;
-	border-color: var(--blue);
+.buttonKnowMore:hover {
+  cursor: pointer;
+  background-color: #ecdbba;
+  color: #2d4263;
+  border-color: var(--blue);
 }
 /* Parallax effect */
-.pimg{
+.pimg {
   width: 100%;
   height: 40vh;
   background-image: url(../assets/pimg1.jpg);
@@ -275,6 +283,6 @@ input[name="r"] {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed; 
+  background-attachment: fixed;
   opacity: 0.7;
 }

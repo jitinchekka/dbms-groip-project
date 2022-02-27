@@ -4,9 +4,9 @@ let section = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header .navbar a");
 
 window.addEventListener("scroll", () => {
-  console.log("100");
+  // console.log("100");
   navbar.classList.remove("active");
-  console.log("scrolled\n");
+  // console.log("scrolled\n");
   section.forEach((sec) => {
     let top = window.scrollY;
     let height = sec.offsetHeight;
@@ -19,12 +19,13 @@ window.addEventListener("scroll", () => {
         document
           .querySelector("header .navbar a[href*=" + id + "]")
           .classList.add("active");
-        console.log("header .navbar a[href*=" + id + "]");
+        // console.log("header .navbar a[href*=" + id + "]");
       });
     }
   });
 });
 
+// Rushik's code for slider
 var counter = 1;
 setInterval(function() {
     document.getElementById("r" + counter).checked = true;

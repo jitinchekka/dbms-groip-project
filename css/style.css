@@ -290,6 +290,9 @@ input[name="r"] {
   color: var(--cream);
   text-align: center;
 }
+#contact h2{
+  padding-bottom: 2%;
+}
 footer {
   display: flex;
   flex-direction: row;

@@ -286,3 +286,23 @@ input[name="r"] {
   background-attachment: fixed;
   opacity: 0.7;
 }
+#instructor{
+  position: relative;
+  background-color: var(--cream);
+  padding-top: 4%;
+}
+.name{
+  /* position: absolute; */
+  color: var(--blue);
+  padding-top: 4%;
+  text-align: center;
+
+}
+#instructor h2{
+  text-align: center;
+  color: var(--blue);
+}
+#instructor img{
+  width: 15rem;
+  height: 15rem;
+}

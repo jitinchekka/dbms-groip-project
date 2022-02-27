@@ -281,6 +281,15 @@ input[name="r"] {
   width: 15rem;
   height: 15rem;
 }
+
+/* Contact section */
+#contact{
+  background-color: var(--blue);
+  padding-top: 4%;
+  padding-bottom: 4%;
+  color: var(--cream);
+  text-align: center;
+}
 footer {
   display: flex;
   flex-direction: row;
@@ -288,9 +297,8 @@ footer {
   justify-content: space-around;
   position: relative;
   padding: 1rem;
-  background-color: var(--blue);
-  color: var(--cream);
-  border-top: solid 3px var(--cream);
+  background-color: var(--cream);
+  color: var(--blue);
 }
 
 footer img {

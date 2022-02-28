@@ -295,15 +295,15 @@ section .title::after {
 }
 
 .skills-content .right .css::before {
-    width: 60%;
+    width: 75%;
 }
 
 .skills-content .right .js::before {
-    width: 80%;
+    width: 60%;
 }
 
 .skills-content .right .php::before {
-    width: 80%;
+    width: 70%;
 }
 
 .skills-content .right .mysql::before {
@@ -422,12 +422,17 @@ section .title::after {
 }
 
 .timeline .content h2 {
-    font-size: 25px;
-    font-weight: 500;
+    /* font-size: 25px;
+    font-weight: 500; */
     line-height: 30px;
     margin-bottom: 10px;
 }
-
+.timeline-content h3{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom:0;
+}
 .timeline content p {
     font-size: 16px;
     line-height: 30px;

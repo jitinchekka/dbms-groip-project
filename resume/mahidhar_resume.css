@@ -326,6 +326,7 @@ section .title::after {
 
 .teams .carousel .card:hover {
     background: crimson;
+    transform: translateY(-10px);
 }
 
 .teams .carousel .card .box {
